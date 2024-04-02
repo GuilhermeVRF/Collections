@@ -69,6 +69,7 @@ public class Conjunto{
         return null;
     }
     
+    
     private Double encontrarMenor(Double menor, int posLista){
         if(posLista == this.conjunto.size()){
             return menor;

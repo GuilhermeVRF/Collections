@@ -5,6 +5,7 @@
 package Main;
 
 import List.Numero.Conjunto;
+import java.util.Collections;
 import java.util.Random;
 
 /**
