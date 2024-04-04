@@ -12,7 +12,7 @@ import java.util.List;
  * @author Guilherme
  */
 public class Conjunto{
-    private List<Double> conjunto;
+    private final List<Double> conjunto;
     
     public Conjunto(){
         this.conjunto = new ArrayList<>();

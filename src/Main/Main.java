@@ -4,9 +4,7 @@
  */
 package Main;
 
-import List.Numero.Conjunto;
-import java.util.Collections;
-import java.util.Random;
+import Set.palavra.ConjuntoPalavra;
 
 /**
  *
@@ -18,17 +16,15 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Conjunto conjuntoRacional = new Conjunto();
-        Random gerador = new Random();
+        ConjuntoPalavra palavras = new ConjuntoPalavra();
         
-        for(int i = 0;i < 5;i++){
-            conjuntoRacional.adicionarNumero(gerador.nextDouble(0,20));
-        }
+        palavras.adicionarPalavra("Guilherme");
+        palavras.adicionarPalavra("Guilherme");
+        palavras.adicionarPalavra("Luís Gustavo");
+        palavras.adicionarPalavra("Wander");
         
-        System.out.println(conjuntoRacional);
-        System.out.println("Soma: "+conjuntoRacional.somarNumeros());
-        System.out.println("Maior: "+ conjuntoRacional.encontrarMaior());
-        System.out.println("Menor: "+ conjuntoRacional.encontrarMenor());
+        System.out.println(palavras.verificarPalavra("Wander"));
+        
+        System.out.println(palavras);
     }
-    
 }
