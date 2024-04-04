@@ -4,7 +4,7 @@
  */
 package Main;
 
-import Set.palavra.ConjuntoPalavra;
+import Set.contato.AgendaContato;
 
 /**
  *
@@ -16,15 +16,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        ConjuntoPalavra palavras = new ConjuntoPalavra();
+        AgendaContato agenda = new AgendaContato();
+        agenda.adicionarContato("Guilherme", "1");
+        agenda.adicionarContato("Luís", "2");
+        agenda.adicionarContato("Wander", "3"); 
+        agenda.adicionarContato("Wander Luís", "4");
         
-        palavras.adicionarPalavra("Guilherme");
-        palavras.adicionarPalavra("Guilherme");
-        palavras.adicionarPalavra("Luís Gustavo");
-        palavras.adicionarPalavra("Wander");
-        
-        System.out.println(palavras.verificarPalavra("Wander"));
-        
-        System.out.println(palavras);
+        System.out.println(agenda.pesquisarContato("Wander"));
+        System.out.println(agenda);
     }
 }
