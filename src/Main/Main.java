@@ -4,7 +4,8 @@
  */
 package Main;
 
-import Set.contato.AgendaContato;
+import Set.produto.Estoque;
+import Set.produto.Produto;
 
 /**
  *
@@ -16,13 +17,14 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        AgendaContato agenda = new AgendaContato();
-        agenda.adicionarContato("Guilherme", "1");
-        agenda.adicionarContato("Luís", "2");
-        agenda.adicionarContato("Wander", "3"); 
-        agenda.adicionarContato("Wander Luís", "4");
+        Estoque estoque = new Estoque();
+        estoque.adicionarProduto(new Produto(1,"Arroz",12));
+        estoque.adicionarProduto(new Produto(1,"Yorgute",2));
+        estoque.adicionarProduto(new Produto(2,"Fubá",5));
+        estoque.adicionarProduto(new Produto(3,"Feijão",7));
+        estoque.adicionarProduto(new Produto(4,"Chiclete",2));
+        estoque.adicionarProduto(new Produto(5,"Bala",3));
         
-        System.out.println(agenda.pesquisarContato("Wander"));
-        System.out.println(agenda);
+        System.out.println(estoque.ordenarPreco());
     }
 }

@@ -10,10 +10,10 @@ import java.util.List;
  *
  * @author Guilherme
  */
-public class ListaTarefa {
+public class ListaTarefas {
     private final List<Tarefa> listaTarefa;
     
-    public ListaTarefa(){
+    public ListaTarefas(){
         this.listaTarefa = new LinkedList<>();
     }
     
