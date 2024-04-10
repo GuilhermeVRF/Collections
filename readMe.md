@@ -1,4 +1,4 @@
-<div style="display: inline-flex">
+<div style="display: inline-flex;">
 <h3>Documentação:</h3> https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html
 </div>
 <div align="center">
